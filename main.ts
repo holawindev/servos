@@ -6,3 +6,19 @@ input.onButtonPressed(Button.A, function () {
         basic.pause(300)
     }
 })
+input.onButtonPressed(Button.AB, function () {
+    for (let index = 0; index < 30; index++) {
+        pins.servoWritePin(AnalogPin.P0, 80)
+        basic.pause(300)
+        pins.servoWritePin(AnalogPin.P0, 0)
+        basic.pause(300)
+    }
+})
+input.onButtonPressed(Button.B, function () {
+    for (let index = 0; index < 30; index++) {
+        pins.servoWritePin(AnalogPin.P0, 80)
+        basic.pause(300)
+        pins.servoWritePin(AnalogPin.P0, 0)
+        basic.pause(300)
+    }
+})
